@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 10rem;
+}
+
+.cardFront {
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 15px;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFront img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 85px;
+    height: 45px;
+    margin: 1rem;
+}
+
+.numberCard {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.nameCard {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 30%;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.date {
+    font-size: 12px;
+    width: 30%;
+    margin-top: 3rem;
+    text-align: right;
+    letter-spacing: 2px;
+    margin-right: 1.5rem;
+}
+
+.cardBack {
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 15px;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 6rem;
+
+}
+
+.cvc {
+    width: 100%;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 3.5rem;
+}
+
+#cardForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 1rem;
+    width: 400px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formGroup label {
+    font-size: 12px;
+}
+
+#holder {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+#name {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+#number {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+#numberInput {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.formRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.formRow label {
+    font-size: 12px;
+}
+
+.expDateInputs {
+    display: flex;
+    width: 50%;
+    gap: 1rem;
+}
+
+.expDateInputs input {
+    width: 65px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 0.5rem;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+#cvc {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    font-size: 16px;
+    margin-top: 0.2rem;
+}
+
+.exp {
+    font-size: 12px;
+    width: 40%;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input.error {
+    border-color: hsl(0, 100%, 66%) !important;
+}
+
+.error-message {
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    margin-top: 5px;
+    display: none;
+    height: 1.2em;
+}
+
+.success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    width: 40%;
+    
+}
+.success h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.success p{
+    color: hsl(212, 12%, 71%);
+    margin-bottom: 2rem;
+}
+.success button{
+    width:80%;
+    height: 40px;
+}
+
+
+/* Responsive Design  tablet*/
+@media (max-width: 1200px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+/* Responsive Design  mobile*/
+@media (max-width: 900px) {
+    body {
+        background-image: url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 35vh;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0;
+        padding: 1.5rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardFront {
+        margin-left: 0;
+        width: 85%;
+        max-width: 447px;
+        height: 200px;
+        background-image: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        margin-top: -85px;
+        margin-right: 40px;
+    }
+
+    .cardBack {
+        background-image: url(./images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0;
+        width: 85%;
+        max-width: 447px;
+        height: 200px;
+        margin-left: 3rem;
+        z-index: 1;
+    }
+
+    .cardFront img {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 60px;
+        height: 30px;
+        margin: 1rem;
+    }
+
+    .numberCard {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .nameCard {
+        text-transform: uppercase;
+        font-size: 12px;
+        width: 30%;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    #numberInput {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+        height: 55px;
+    }
+
+    #name {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+        height: 55px;
+    }
+
+    .formGroup label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #cvc {
+        display: flex;
+        width: 200px ;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid hsl(270, 3%, 87%);
+        font-size: 16px;
+        margin-top: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .success{
+        width: 90%;
+    }
+
+}
